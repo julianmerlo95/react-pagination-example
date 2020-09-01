@@ -1,0 +1,34 @@
+.competition
+  width: 80%
+  margin: 0 auto
+  text-align: center
+  
+  &__pagination
+    display: flex
+    justify-content: space-around
+    border: 2px solid black
+    box-shadow: 2px -1px 3px black
+
+    & h2
+      border: 2px solid black
+      padding: 5px
+      box-shadow: 2px -1px 3px black
+      cursor: pointer
+      transition: 0.5s
+
+    & h2:hover
+      box-shadow: 2px -1px 7px black
+      transition: 0.5s
+      background: black
+      color: white
+
+  &__league span
+    color: blue
+
+@media screen and ( max-width: 425px )
+  .competition__pagination
+    flex-wrap: wrap
+    padding: 5px
+
+  .competition__league h2
+    font-size: 18px  
